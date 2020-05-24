@@ -1,0 +1,35 @@
+#todo-error{
+  color: red;
+  font-size: 2em;
+}
+
+body{
+  background-size: cover;
+}
+
+.textSize{
+  font-size: x-large;
+}
+
+.contentBottom{
+  position: absolute;
+  bottom: 3%;
+}
+
+.width-100{
+  width: 100%;
+}
+
+.bgBox{
+  background-color: rgb(108, 117, 125, .7);
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.justify-content-flex-end{
+  justify-content: flex-end;
+}
+
+.flex-column{
+  flex-direction: column;
+}

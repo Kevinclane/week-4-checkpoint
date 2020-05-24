@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Inspire</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body id="bg-image">
+
+	<main class="container-fluid">
+		<div class="row">
+			<div class="col-11"></div>
+			<div class="col-1 p-4 textSize">
+				<div id="weather" class="bgBox text-center text-light">
+
+				</div>
+
+			</div>
+		</div>
+
+		<div class="row contentBottom width-100">
+			<div class="col-2 text-center text-light justify-content-flex-end d-flex flex-column">
+				<div class="bgBox">
+					Image Source
+				</div>
+			</div>
+			<div class="col-6 text-center text-light justify-content-flex-end d-flex flex-column">
+				<div id="quote" class="bgBox">
+				</div>
+			</div>
+			<div class="col-4 text-light justify-content-flex-end d-flex flex-column">
+				<div class="bgBox py-2">
+					<div class="py-2 text-center">
+						Your Todo List
+					</div>
+					<div id="todo-error"></div>
+					<div>
+						<ul id="todos">
+
+						</ul>
+					</div>
+					<form class="text-center" onsubmit="app.todoController.addTodo(event)">
+						<input type="text" name="task">
+						<button type="submit" class="btn btn-secondary">Add new task</button>
+					</form>
+
+				</div>
+			</div>
+		</div>
+
+
+
+	</main>
+
+
+
+
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+	<script type="module" src="app/main.js"></script>
+</body>
+
+</html>
+<html>
