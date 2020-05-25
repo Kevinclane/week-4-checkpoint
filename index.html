@@ -24,15 +24,22 @@
 
 			</div>
 		</div>
+		<div class="row justify-content-center">
 
-		<div class="row contentBottom width-100">
-			<div class="col-2 text-center text-light justify-content-flex-end d-flex flex-column">
-				<div class="bgBox">
-					Image Source
+			<div class="col-6 text-center">
+				<div class="bgBox text-light pb-2" id="clock">
+					Clock
 				</div>
 			</div>
+		</div>
+
+		<div class="row contentBottom width-100 justify-content-between">
+			<!-- <div class="col-2 text-center text-light justify-content-flex-end d-flex flex-column">
+
+			</div> -->
 			<div class="col-6 text-center text-light justify-content-flex-end d-flex flex-column">
-				<div id="quote" class="bgBox p-2">
+				<div id="quote" class="bgBox p-2" onmouseover="app.quoteController.showAuthor()"
+					onmouseout="app.quoteController.hideAuthor()">
 				</div>
 			</div>
 			<div class="col-4 text-light justify-content-flex-end d-flex flex-column">
@@ -40,7 +47,9 @@
 					<div class="py-2 text-center">
 						Your Todo List
 					</div>
-					<div id="todo-error"></div>
+					<div class="text-center pb-2">
+						<span>Tasks left to complete:</span> <span id="todoCount"></span>
+					</div>
 					<div>
 						<ul id="todos">
 

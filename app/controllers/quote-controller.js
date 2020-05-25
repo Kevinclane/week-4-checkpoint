@@ -14,5 +14,11 @@ export default class QuoteController {
     store.subscribe("quote", _drawQuote)
   }
 
+  showAuthor() {
+    document.getElementById("author").removeAttribute("hidden")
+  }
 
+  hideAuthor() {
+    document.getElementById("author").setAttribute("hidden", "")
+  }
 }

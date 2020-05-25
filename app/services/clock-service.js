@@ -8,8 +8,7 @@ class ClockService {
 
   clockData() {
     let date = new Date()
-    console.log(date)
-
+    return date
   }
 
 }

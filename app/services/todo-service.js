@@ -21,6 +21,19 @@ class TodoService {
       .catch(e => console.error(e))
   }
 
+  todocount() {
+    let count = 0
+    let currentTodos = store.State.todos
+    let i = 0
+    while (i < currentTodos.length) {
+      if (currentTodos[i].completed == false) {
+        count++
+      }
+      i++
+    }
+    return count
+  }
+
   addTodoAsync(todo) {
     let newTodo = new Todo(todo)
     todoApi.post("", newTodo)

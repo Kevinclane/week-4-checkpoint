@@ -45,7 +45,16 @@ li {
   justify-content: flex-end;
 }
 
+.justify-content-between{
+  justify-content: space-between;
+}
+
 .flex-column{
   flex-direction: column;
+}
+
+#clock{
+  margin-top: 25vh;
+  font-size: 100px;
 }
 

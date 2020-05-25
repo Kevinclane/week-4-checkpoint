@@ -6,11 +6,11 @@ export default class Quote {
 
   get Template() {
     return /*html*/`
-    <div>
+    <div >
       "${this.body}"
     </div>
-    <div>
-    ${this.author}
+    <div id="author" hidden>
+    -${this.author}-
   </div>
     `
   }

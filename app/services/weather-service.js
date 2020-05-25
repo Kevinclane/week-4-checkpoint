@@ -8,6 +8,7 @@ const weatherApi = axios.create({
 });
 
 class WeatherService {
+
   constructor() {
     this.getWeather()
   }
@@ -15,6 +16,10 @@ class WeatherService {
     let res = await weatherApi.get();
     store.commit("weather", new Weather(res.data));
   }
+
+  // toggleWeather(weather) {
+  //   store.State.weather = weather
+  // }
 }
 
 const weatherService = new WeatherService();
